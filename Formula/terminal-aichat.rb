@@ -1,25 +1,25 @@
 class TerminalAichat < Formula
   desc "A cli for AI/LLM chat in terminal. Extremely simple and easy to use. Using OpenAI-compatible `/v1/chat/completion` API"
-  homepage "https://github.com/slow-groovin/terminal-aichat"
-  version "1.0.5"
+  homepage "https://github.com/ctxinf/terminal-aichat"
+  version "1.0.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v1.0.5/terminal-aichat-aarch64-apple-darwin.tar.xz"
-      sha256 "e177a06616dc11c929de22fae7dc76abafaffdb221cbb5b82663076a0ae76c1c"
+      url "https://github.com/ctxinf/terminal-aichat/releases/download/v1.0.6/terminal-aichat-aarch64-apple-darwin.tar.xz"
+      sha256 "da0b08174286256e2d5df6894abb081371fd4c97b0d125c9ab47737e7aa79e72"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v1.0.5/terminal-aichat-x86_64-apple-darwin.tar.xz"
-      sha256 "4d36bf890e860810b1c7b003dd57e062aad84e9be375ba99548ad4bea9458734"
+      url "https://github.com/ctxinf/terminal-aichat/releases/download/v1.0.6/terminal-aichat-x86_64-apple-darwin.tar.xz"
+      sha256 "c2316a41f500291fa5f285c759c39a847db4dd841ead08d122987a44c5610a14"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v1.0.5/terminal-aichat-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4c7942968609950e8d340d3627e343bf45a0f2a62da2e28fc3835359a257c175"
+      url "https://github.com/ctxinf/terminal-aichat/releases/download/v1.0.6/terminal-aichat-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "75765d688d9db28e70f2e3f29ad1cc4c3a26f8afdc4ea7537542f8fdddeed05f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/slow-groovin/terminal-aichat/releases/download/v1.0.5/terminal-aichat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7fb796bd0e1e5cb2a3f60e5d0bf925ce9f06181ed2bf84634da71a245006315a"
+      url "https://github.com/ctxinf/terminal-aichat/releases/download/v1.0.6/terminal-aichat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0c0f1e111aad291dba587bec5d2d885f1055056dc4d8ab53e93470b11b43b8bb"
     end
   end
   license "MIT"
