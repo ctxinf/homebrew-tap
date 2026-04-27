@@ -1,25 +1,25 @@
 class AgentEnvGuard < Formula
   desc "Run commands while masking configured environment secret values from stdout and stderr."
   homepage "https://github.com/ctxinf/agent-env-guard"
-  version "0.1.9"
+  version "0.1.10"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ctxinf/agent-env-guard/releases/download/v0.1.9/agent-env-guard-aarch64-apple-darwin.tar.xz"
-      sha256 "b72745137e412b0ee0118c5e2517538c0d75475fe542f8875faab1b049cee1f7"
+      url "https://github.com/ctxinf/agent-env-guard/releases/download/v0.1.10/agent-env-guard-aarch64-apple-darwin.tar.xz"
+      sha256 "97c2bf957075af214df5a95bf4961bcaeddba90b4c22bd2ddda4fd3ffba8ad3b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ctxinf/agent-env-guard/releases/download/v0.1.9/agent-env-guard-x86_64-apple-darwin.tar.xz"
-      sha256 "992ff107f4d70eb13b785b069da2b62dce25033247e9f49720b81825bef55596"
+      url "https://github.com/ctxinf/agent-env-guard/releases/download/v0.1.10/agent-env-guard-x86_64-apple-darwin.tar.xz"
+      sha256 "dbdaa4ebc6cbfe05fb3e0dd3b171fb94bd05f11421122123abac1aa43d3ae9b2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ctxinf/agent-env-guard/releases/download/v0.1.9/agent-env-guard-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8d61d2e06243c780c0a5101483eafcd84c9684466377a6c3d9ff9ccd1c969faf"
+      url "https://github.com/ctxinf/agent-env-guard/releases/download/v0.1.10/agent-env-guard-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e435fde4704bbed06f147b9ab7af5998554ba452272491bda0c489e0a18e45a3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ctxinf/agent-env-guard/releases/download/v0.1.9/agent-env-guard-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a5964c05244fb46c09e396c4a84c8acaa767b4163e367c8eb2ad60863e618937"
+      url "https://github.com/ctxinf/agent-env-guard/releases/download/v0.1.10/agent-env-guard-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a451a6b241c59c879fc8c7f9feaa3a43033d80a2defcca2f791a5fad544e2c8e"
     end
   end
   license "MIT"
