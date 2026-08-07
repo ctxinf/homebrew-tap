@@ -1,25 +1,25 @@
 class AtuinWebManage < Formula
   desc "Local web UI to manage (search, edit, bulk-delete) atuin shell history"
   homepage "https://github.com/ctxinf/atuin-web-manage"
-  version "1.0.3"
+  version "1.0.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ctxinf/atuin-web-manage/releases/download/1.0.3/atuin-web-manage-aarch64-apple-darwin.tar.xz"
-      sha256 "41c7f69c988274c5038973a92e83376f31cbea824671aad7ef90813ffed2d40b"
+      url "https://github.com/ctxinf/atuin-web-manage/releases/download/1.0.4/atuin-web-manage-aarch64-apple-darwin.tar.xz"
+      sha256 "481b873b68a003b695f1e5f491badefdad40e3a77a3b87d282aea85420c631fc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ctxinf/atuin-web-manage/releases/download/1.0.3/atuin-web-manage-x86_64-apple-darwin.tar.xz"
-      sha256 "dfd864d50f65466578ecefab36f0639cc07aaf80d66b775ebcdca4071b678158"
+      url "https://github.com/ctxinf/atuin-web-manage/releases/download/1.0.4/atuin-web-manage-x86_64-apple-darwin.tar.xz"
+      sha256 "46a8ab9b409dd782c7c1872b191aca11e4e719df0d4cd373d789008364e032df"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ctxinf/atuin-web-manage/releases/download/1.0.3/atuin-web-manage-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6b8bfbf69b76ae01a81e5ce59566fff7b2ead24b94d06de8c4ea918e0130c19c"
+      url "https://github.com/ctxinf/atuin-web-manage/releases/download/1.0.4/atuin-web-manage-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "69301a8449d73a7ab0e743611fd514cfa4bd03c0b30979a3b7271b1fe0bfe799"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ctxinf/atuin-web-manage/releases/download/1.0.3/atuin-web-manage-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "67391d1020cbcf2845eded0c976e2cc2d8ad8a9c3c38cb083b6b66756469348c"
+      url "https://github.com/ctxinf/atuin-web-manage/releases/download/1.0.4/atuin-web-manage-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0bf840c3310733a365eb04a5795f8808923fe315f3f7a3998ebbaade0c81a22b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
