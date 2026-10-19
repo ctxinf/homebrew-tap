@@ -1,20 +1,20 @@
 class Netinspect < Formula
   desc "Monitor network connections of Linux processes"
   homepage "https://github.com/ctxinf/netinspect"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   depends_on :linux
 
   on_intel do
     depends_on arch: :x86_64
-    url "https://github.com/ctxinf/netinspect/releases/download/v0.1.4/netinspect_linux_amd64_glibc.tar.gz"
-    sha256 "f52483459cde06cf793bd3add2d04f1b1458584ba265ed3fe9071cdecc12c8c5"
+    url "https://github.com/ctxinf/netinspect/releases/download/v0.1.5/netinspect_linux_amd64_glibc.tar.gz"
+    sha256 "4f84685946df5de08d33c0181fc9919a2d7d615b679f4c88ac5d8b91532d44ab"
   end
   on_arm do
     depends_on arch: :arm64
-    url "https://github.com/ctxinf/netinspect/releases/download/v0.1.4/netinspect_linux_arm64_glibc.tar.gz"
-    sha256 "e507645ffc9c44157fa6a514741c03eb91ca1f0dcad2d4595cab530c12e379b3"
+    url "https://github.com/ctxinf/netinspect/releases/download/v0.1.5/netinspect_linux_arm64_glibc.tar.gz"
+    sha256 "5664e3b01c8263ee53c176ac4219719b4986b03fbb01f2aa552ebaae3237f488"
   end
 
   def install
@@ -22,6 +22,6 @@ class Netinspect < Formula
   end
 
   test do
-    assert_equal "netinspect v0.1.4", shell_output("#{bin}/netinspect --version").strip
+    assert_equal "netinspect v0.1.5", shell_output("#{bin}/netinspect --version").strip
   end
 end
