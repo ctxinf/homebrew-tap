@@ -1,25 +1,25 @@
 class TerminalAichat < Formula
   desc "A cli for AI/LLM chat in terminal. Extremely simple and easy to use. Using OpenAI-compatible `/v1/chat/completion` API"
   homepage "https://github.com/ctxinf/terminal-aichat"
-  version "2.3.1"
+  version "2.3.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ctxinf/terminal-aichat/releases/download/v2.3.1/terminal-aichat-aarch64-apple-darwin.tar.xz"
-      sha256 "c277fc3235574089fd4e55949f16827b02a8350a834af4fcfd11a9479b9eae71"
+      url "https://github.com/ctxinf/terminal-aichat/releases/download/v2.3.2/terminal-aichat-aarch64-apple-darwin.tar.xz"
+      sha256 "1f67bccb9c7b1ee4787f9d4bcbac5a3e42705ef0fff62d8d2c8160236bd00980"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ctxinf/terminal-aichat/releases/download/v2.3.1/terminal-aichat-x86_64-apple-darwin.tar.xz"
-      sha256 "17214ebf9cd29c9c95c42dbb4e89bff39998a6f3d4a56905595b5b281d9a2e6e"
+      url "https://github.com/ctxinf/terminal-aichat/releases/download/v2.3.2/terminal-aichat-x86_64-apple-darwin.tar.xz"
+      sha256 "a09a158064c8f68f1d724eecc04087f4025ceedc202ee814297a5b69657bd50e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ctxinf/terminal-aichat/releases/download/v2.3.1/terminal-aichat-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d37a04cb93ac6b138f92d8f73ec55c0e2bd3fe0b649b10a2318552c0c6c6c9ce"
+      url "https://github.com/ctxinf/terminal-aichat/releases/download/v2.3.2/terminal-aichat-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e4736e97985ff9d485eb3312258a877a8fc53a373ac2141fa59575051d681502"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ctxinf/terminal-aichat/releases/download/v2.3.1/terminal-aichat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "28f57f1220f1235c21c4a6277b18e55461a680dd6617d8f2edf1831967f7957e"
+      url "https://github.com/ctxinf/terminal-aichat/releases/download/v2.3.2/terminal-aichat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "489ffd6376481310d311e5d715b8db71015b804d3d5c2cbf17c1119ec0d50517"
     end
   end
   license "MIT"
